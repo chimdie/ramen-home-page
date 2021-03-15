@@ -1,17 +1,15 @@
 import React from 'react'
 import Navbar from './Navbar'
-import Head from 'next/head'
+import Hero from './Hero'
+
 
 export const siteTitle = "Ramen"
 
-function Layout({ children }) {
+function Layout() {
     return (
         <div>
-            <Head>
-                <title>{siteTitle}</title>
-            </Head>
             <Navbar/>
-            {children}
+            <Hero />
         </div>
     )
 }
