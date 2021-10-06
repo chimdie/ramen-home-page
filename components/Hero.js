@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Bottom from "./BottomHero";
+import { UploadImg } from "imguploadplugin"
 
 function Hero() {
   return (
@@ -31,6 +32,9 @@ function Hero() {
             alt="ramen"
           />
         </div>
+      </div>
+      <div>
+        <UploadImg/>
       </div>
       <Bottom />
     </div>
